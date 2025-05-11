@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MyApp",     // 自定义调试名称
+            "type": "cppdbg",          // C++ 调试器类型
+            "request": "launch",       // 启动调试
+            "program": "${workspaceFolder}/build/RayTracing.exe",  // 替换为你的 exe 路径
+            "args": [],                // 可添加命令行参数
+            "stopAtEntry": false,      // 是否在入口暂停
+            "cwd": "${workspaceFolder}", // 工作目录
+            "environment": [],
+            "externalConsole": true,   // 使用外部控制台（推荐）
+            "MIMode": "gdb",           // 调试器类型（Windows 可选 "lldb"）
+            "miDebuggerPath": "gdb.exe", // GDB 路径（MinGW 默认在 PATH 中）
+            "setupCommands": [
+                {
+                    "description": "启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake: build" // 调试前自动构建（需 tasks.json）
+        }
+    ]
+}

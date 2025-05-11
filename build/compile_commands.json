@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/learning_codes/games_work/duty_7/build",
+  "command": "D:\\learning_codes\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\RayTracing.dir\\main.cpp.obj -c D:\\learning_codes\\games_work\\duty_7\\Assignment7\\main.cpp",
+  "file": "D:/learning_codes/games_work/duty_7/Assignment7/main.cpp",
+  "output": "CMakeFiles/RayTracing.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/learning_codes/games_work/duty_7/build",
+  "command": "D:\\learning_codes\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\RayTracing.dir\\Vector.cpp.obj -c D:\\learning_codes\\games_work\\duty_7\\Assignment7\\Vector.cpp",
+  "file": "D:/learning_codes/games_work/duty_7/Assignment7/Vector.cpp",
+  "output": "CMakeFiles/RayTracing.dir/Vector.cpp.obj"
+},
+{
+  "directory": "D:/learning_codes/games_work/duty_7/build",
+  "command": "D:\\learning_codes\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\RayTracing.dir\\Scene.cpp.obj -c D:\\learning_codes\\games_work\\duty_7\\Assignment7\\Scene.cpp",
+  "file": "D:/learning_codes/games_work/duty_7/Assignment7/Scene.cpp",
+  "output": "CMakeFiles/RayTracing.dir/Scene.cpp.obj"
+},
+{
+  "directory": "D:/learning_codes/games_work/duty_7/build",
+  "command": "D:\\learning_codes\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\RayTracing.dir\\BVH.cpp.obj -c D:\\learning_codes\\games_work\\duty_7\\Assignment7\\BVH.cpp",
+  "file": "D:/learning_codes/games_work/duty_7/Assignment7/BVH.cpp",
+  "output": "CMakeFiles/RayTracing.dir/BVH.cpp.obj"
+},
+{
+  "directory": "D:/learning_codes/games_work/duty_7/build",
+  "command": "D:\\learning_codes\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\RayTracing.dir\\Renderer.cpp.obj -c D:\\learning_codes\\games_work\\duty_7\\Assignment7\\Renderer.cpp",
+  "file": "D:/learning_codes/games_work/duty_7/Assignment7/Renderer.cpp",
+  "output": "CMakeFiles/RayTracing.dir/Renderer.cpp.obj"
+}
+]
