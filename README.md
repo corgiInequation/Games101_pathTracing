@@ -1,22 +1,21 @@
-# Games101 Experiment7
+# Games101 Experiment 7
 
-## 实验内容
+## Experiment Content
 
-- 由于Whitted Style Ray tracing 只能处理镜面材质，对于粗糙表面只能使用bling phong着色模型进行近似处理，并不是特别精确。因此，在本次实验中，将使用渲染方程进行路径追踪，以实现更好的渲染效果。
-- 本次实验主要任务为实现castRay函数。
-  - 首先，还是求出光线和物体的交点，如果没有交点，则返回黑色
-  - 之后，对于触碰到的交点，分两种情况
-    - 如果是直接碰到了光源，那么直接返回光源的emit值即可。
-    - 如果是碰到了光源外的其他物体，则分为两部分计算。
-      - 第一部分为光源直接打到物体上的光。
-      - 第二部分为，光经过反射和折射，间接到达其他物体上的光
-    - 积分的计算，使用蒙特卡洛模拟，求近似解
-  - 最后，将求出的颜色返回即可
-- 注意事项：
-  - 本次的cornell box模型中，右侧墙壁，是没有厚度的，会出现即便光照穿过墙壁，却texit <= tenter的情况。这个主要是由于浮点数的精度问题。因此，需要给texit加上一个微小的变量epsilon, 来避免浮点数的精度问题。
+- Since Whitted-style ray tracing only handles specular materials and approximates rough surfaces using the Blinn-Phong model, it lacks accuracy for complex surfaces. In this experiment, we use the rendering equation and implement path tracing to achieve more realistic results.
+- The main task is to implement the `castRay` function:
+  - First, compute the intersection between the ray and scene objects. If there is no intersection, return black.
+  - If an intersection is found, handle it in two cases:
+    - If the ray directly hits a light source, return the emitted value of the light.
+    - If the ray hits a non-emissive object, compute two components:
+      - The direct lighting from the light source to the object.
+      - The indirect lighting resulting from reflected or refracted rays reaching other surfaces.
+    - Monte Carlo integration is used to approximate the rendering equation.
+  - Finally, return the computed color.
 
+- Notes:
+  - In the Cornell Box model used in this experiment, the right wall is infinitely thin. This can lead to cases where light passes through the wall and causes `texit <= tenter` due to floating-point precision errors. To avoid this, a small epsilon value should be added to `texit`.
 
+## Experiment Result
 
-## 实验结果
-
-- <img src="C:\Users\i love china\AppData\Roaming\Typora\typora-user-images\image-20250511180328684.png" alt="image-20250511180328684" style="zoom:67%;" />
+- <img src="https://github.com/corgiInequation/Games101_pathTracing/blob/main/image.png" alt="path-tracing-result" width="67%" />
