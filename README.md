@@ -19,4 +19,5 @@
 ## Experiment Result
 
 - <img src="https://github.com/corgiInequation/Games101_pathTracing/blob/main/image.png" alt="path-tracing-result" width="67%" />
+- sssssssssssssss
 
